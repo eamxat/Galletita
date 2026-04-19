@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>MICHAEL JACKSON | 90s Raw Energy</title>
+    <title>Galletita Xatspace MJ</title>
     
     <!-- 
-        === GUÍA DE ARCHIVOS PARA GITHUB (SIN CARPETAS) ===
-        
+        === GUÍA DE ARCHIVOS PARA GITHUB (SIN CARPETAS) ===        
         Sube tus archivos con estos nombres exactos al mismo lugar (root):
         1.  tabloid_junkie.mp3
         2.  bg_intro.jpg        (Fondo inicial)
@@ -107,8 +106,8 @@
         .intro-wallpaper {
             position: absolute;
             inset: 0;
-            /* CAMBIO: Ruta local */
-            background-image: url("bg_intro.jpg");
+            /* CAMBIO: Ruta local con fallback para visualización previa */
+            background-image: url("bg_intro.jpg"), url("https://images.unsplash.com/photo-1470229722913-7c090be5f5be?q=80&w=2000&auto=format&fit=crop");
             background-size: cover;
             background-position: center;
             z-index: -2;
@@ -322,8 +321,9 @@
             </div>
 
             <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-3xl z-30 pointer-events-none">
-                <!-- CAMBIO: Ruta local -->
+                <!-- CAMBIO: Ruta local (con fallback de vista previa) -->
                 <img src="mj_render.png" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?q=80&w=1000&auto=format&fit=crop';"
                      alt="Michael Jackson 3D Render" 
                      class="mj-render w-full h-auto object-contain mx-auto"
                      style="max-height: 80vh;">
@@ -376,7 +376,7 @@
                     <div class="jagged-bg bg-red-600"></div>
                     <div class="relative bg-black p-1 border-2 border-black">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="gallery_1.jpg" alt="MJ Selfie Style 1" class="w-full aspect-[9/16] object-cover block">
+                        <img src="gallery_1.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1493225457124-a1a2a5f5fa88?q=80&w=500&auto=format&fit=crop';" alt="MJ Selfie Style 1" class="w-full aspect-[9/16] object-cover block">
                         <div class="absolute bottom-2 left-2 bg-white text-black px-1 font-headline text-lg transform -rotate-2">BAD</div>
                     </div>
                 </div>
@@ -386,7 +386,7 @@
                     <div class="jagged-bg bg-white"></div>
                     <div class="relative bg-black p-1 border-2 border-black">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="gallery_2.jpg" alt="MJ Selfie Style 2" class="w-full aspect-[9/16] object-cover block">
+                        <img src="gallery_2.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=500&auto=format&fit=crop';" alt="MJ Selfie Style 2" class="w-full aspect-[9/16] object-cover block">
                         <div class="absolute top-2 right-2 bg-red-600 text-white px-1 font-headline text-lg transform rotate-2">WILD</div>
                     </div>
                 </div>
@@ -396,7 +396,7 @@
                     <div class="jagged-bg bg-red-600"></div>
                     <div class="relative bg-black p-1 border-2 border-black">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="gallery_3.jpg" alt="MJ Selfie Style 3" class="w-full aspect-[9/16] object-cover block">
+                        <img src="gallery_3.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=500&auto=format&fit=crop';" alt="MJ Selfie Style 3" class="w-full aspect-[9/16] object-cover block">
                         <div class="absolute bottom-2 right-2 bg-white text-black px-1 font-headline text-lg transform -rotate-1">ICON</div>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                     <div class="jagged-bg bg-white"></div>
                     <div class="relative bg-black p-1 border-2 border-black">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="gallery_4.jpg" alt="MJ Selfie Style 4" class="w-full aspect-[9/16] object-cover block">
+                        <img src="gallery_4.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=500&auto=format&fit=crop';" alt="MJ Selfie Style 4" class="w-full aspect-[9/16] object-cover block">
                         <div class="absolute top-2 left-2 bg-red-600 text-white px-1 font-headline text-lg transform rotate-1">TOUR</div>
                     </div>
                 </div>
@@ -416,7 +416,7 @@
                     <div class="jagged-bg bg-red-600"></div>
                     <div class="relative bg-black p-1 border-2 border-black">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="gallery_5.jpg" alt="MJ Selfie Style 5" class="w-full aspect-[9/16] object-cover block">
+                        <img src="gallery_5.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=500&auto=format&fit=crop';" alt="MJ Selfie Style 5" class="w-full aspect-[9/16] object-cover block">
                         <div class="absolute bottom-2 left-2 bg-white text-black px-1 font-headline text-lg transform -rotate-2">KING</div>
                     </div>
                 </div>
@@ -440,7 +440,7 @@
                     <div class="jagged-bg bg-white"></div>
                     <div class="relative bg-black p-1 border-2 border-black">
                         <!-- CAMBIO: Ruta local - Foto extra -->
-                        <img src="extra_photo.jpg" alt="Extra MJ Moment" class="w-full aspect-[4/5] object-cover block">
+                        <img src="extra_photo.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1520690214124-2405c5217036?q=80&w=500&auto=format&fit=crop';" alt="Extra MJ Moment" class="w-full aspect-[4/5] object-cover block">
                         <div class="absolute bottom-2 right-2 bg-red-600 text-white px-2 font-headline text-xl transform -rotate-2">RARE</div>
                     </div>
                 </div>
@@ -476,27 +476,27 @@
                     <!-- Carousel items generated by JS -->
                     <div class="carousel-item shadow-[0_0_30px_rgba(255,0,0,0.5)]">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="carousel_1.jpg" alt="MJ 1">
+                        <img src="carousel_1.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1501612780327-45045538702b?q=80&w=500&auto=format&fit=crop';" alt="MJ 1">
                     </div>
                     <div class="carousel-item shadow-[0_0_30px_rgba(255,0,0,0.5)]">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="carousel_2.jpg" alt="MJ 2">
+                        <img src="carousel_2.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=500&auto=format&fit=crop';" alt="MJ 2">
                     </div>
                     <div class="carousel-item shadow-[0_0_30px_rgba(255,0,0,0.5)]">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="carousel_3.jpg" alt="MJ 3">
+                        <img src="carousel_3.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1520690214124-2405c5217036?q=80&w=500&auto=format&fit=crop';" alt="MJ 3">
                     </div>
                     <div class="carousel-item shadow-[0_0_30px_rgba(255,0,0,0.5)]">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="carousel_4.jpg" alt="MJ 4">
+                        <img src="carousel_4.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1493225457124-a1a2a5f5fa88?q=80&w=500&auto=format&fit=crop';" alt="MJ 4">
                     </div>
                     <div class="carousel-item shadow-[0_0_30px_rgba(255,0,0,0.5)]">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="carousel_5.jpg" alt="MJ 5">
+                        <img src="carousel_5.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=500&auto=format&fit=crop';" alt="MJ 5">
                     </div>
                     <div class="carousel-item shadow-[0_0_30px_rgba(255,0,0,0.5)]">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="carousel_6.jpg" alt="MJ 6">
+                        <img src="carousel_6.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1470229722913-7c090be5f5be?q=80&w=500&auto=format&fit=crop';" alt="MJ 6">
                     </div>
                 </div>
             </div>
@@ -512,7 +512,7 @@
                 <div class="flex items-center gap-4 group">
                     <div class="relative hoverable">
                         <!-- CAMBIO: Ruta local -->
-                        <img src="profile.jpg" alt="Profile" class="w-16 h-16 rounded-full border-2 border-white object-cover group-hover:border-red-600 transition-colors">
+                        <img src="profile.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop';" alt="Profile" class="w-16 h-16 rounded-full border-2 border-white object-cover group-hover:border-red-600 transition-colors">
                         <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-black rounded-full animate-pulse"></span>
                     </div>
                     <div class="font-mono">
@@ -526,8 +526,8 @@
                     </div>
                 </div>
                 <!-- Signature -->
-                <div class="text-center md:text-right flex flex-col justify-center h-full mt-2">
-                     <p class="font-headline text-2xl tracking-wide mb-1">NEVERLAND <span class="text-red-600">ARCHIVES</span></p>
+                <div class="text-center md:text-right flex flex-col justify-center h-full mt-2"> 
+                    <p class="font-headline text-2xl tracking-wide mb-1">NEVERLAND <span class="text-red-600">ARCHIVES</span></p>
                     <p class="font-mono text-[10px] text-gray-500 tracking-widest">©2026 Eam96 Xatspace Design</p>
                 </div>
             </div>
@@ -680,6 +680,18 @@
                 if(mjRender) mjRender.style.transform = `translateX(${x}px) translateY(${y}px)`;
             });
         }
+
+        // --- PROTECCIÓN: Bloquear Click Derecho y F12 ---
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault(); // Bloquea el clic derecho
+        });
+
+        document.addEventListener('keydown', function(e) {
+            // Bloquea la tecla F12
+            if (e.key === 'F12' || e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
     </script>
 </body>
 </html>
